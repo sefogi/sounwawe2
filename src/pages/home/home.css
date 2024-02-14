@@ -1,4 +1,9 @@
-.jumbotron{
-    background-color: #2F303A
-    ;
+.bg-image{
+    display: flex;
+    justify-content: center;
+    width: 18rem;
+    padding-top: 10rem;
+    margin-right: ;
+
 }
+

@@ -3,6 +3,6 @@ import "./join.css"
 
 export const Join = () => {
   return (
-    <div>Join</div>
+    <div></div>
   )
 }

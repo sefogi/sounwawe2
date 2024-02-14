@@ -1,8 +1,11 @@
 import "./index.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+
 import {NavBar} from  './components/Navbar/NavBar'
-import { Footer } from "./components/foooter/Footer";
 import { Home } from "./pages/home/Home";
+import { Disover } from "./pages/discover/Disover";
+import { Join } from "./pages/join/Join";
 import './App.css'
 
 function App() {
@@ -11,7 +14,9 @@ function App() {
     <>
       <NavBar/>
       <Home/>
-      <Footer/>
+      <Disover/>
+      <Join/>
+      
     </>
   )
 }

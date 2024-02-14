@@ -1,6 +1,7 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import bgimage from "../../assets/landing-page-girl.png";
 import "./home.css"
 
 
@@ -9,16 +10,16 @@ export const Home = () => {
     <div>
       <Container>
         <Row>
-          <Col>
-              <h1>aqui va la imagen</h1>
+          <Col md={{ span: 4, offset: 1 }}>
+              <img className='bg-image' src={bgimage} alt="Girl in a field"></img>
           </Col>
-          <Col>
-            <div className="jumbotron">
-              <h1 className="display-3">Felling the music</h1>
+          <Col  md={{ span: 4, offset: 1 }} className='text-col'>
+            
+              <h1 className="display">Felling the music</h1>
               <p className="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-              <hr className="my-4" />
               
-            </div>
+              
+          
           </Col>
         </Row>
       </Container>
