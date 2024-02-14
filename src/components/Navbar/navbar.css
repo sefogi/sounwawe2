@@ -1,5 +1,17 @@
-.navbar {
-    background-color: var(--REACT_APP_NAVBAR_BG_COLOR);
-    color: var(--REACT_APP_NAVBAR_TEXT_COLOR);
-  }
-  
+.bg_body{
+ background-color: #202027;
+ font-family: Poppins;
+
+ 
+
+}
+
+
+
+.cont_navbar{
+  display: flex;
+  justify-content: space-around;
+ 
+
+}
+

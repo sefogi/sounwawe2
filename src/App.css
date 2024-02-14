@@ -1,12 +1,17 @@
-@import url('variables.css');
+body{
+  background-color:#2F303A ;
+  font: 1,2rem Poppins;
+  color:white;
+}
+
 
 
 /* #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0rem;
   text-align: center;
-}
+} */
 
 .logo {
   height: 6em;
