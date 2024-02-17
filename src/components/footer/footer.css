@@ -1,0 +1,12 @@
+.bgfooter{
+    background-color:#202027;
+    color:white
+}
+
+.Cardbd{
+    display: flex;
+    flex-direction: row;
+    margin-left: 10em;
+    
+}
+

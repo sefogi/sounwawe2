@@ -5,19 +5,20 @@ import bgimage from "../../assets/landing-page-girl.png";
 import "./home.css"
 
 
+
 export const Home = () => {
   return (
     <div>
       <Container>
         <Row>
-          <Col md={{ span: 4, offset: 1 }}>
-              <img className='bg-image' src={bgimage} alt="Girl in a field"></img>
+          <Col md={{ span:5, offset: 6 }} >
+             <h1>Felling the music</h1>
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere repudiandae magni odit similique id molestias tempora voluptates aperiam iste repellat. Culpa consequatur beatae itaque reiciendis. Soluta officiis expedita ratione ducimus.</p>
           </Col>
-          <Col  md={{ span: 4, offset: 1 }} className='text-col'>
+          
+          <Col  md={{ span: 6, offset: 2 }} >
             
-              <h1 className="display">Felling the music</h1>
-              <p className="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-              
+          <img className='bg-image' src={bgimage} alt="Girl in a field"></img>
               
           
           </Col>

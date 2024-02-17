@@ -1,25 +1,31 @@
 import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
+import { NavLink, Link } from 'react-router-dom';
 import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
 import logo from "../../assets/logo.png"
 import "./navbar.css"
 
 
 export const NavBar = () => {
-    
-    return (
-      <Navbar expand="lg" className="bg_body">
-        <Container className="cont_navbar">
-        <Navbar.Brand className='text-light' href="#home">
-            <img className='logo' src={logo} alt='logo'/>
-            <>Soundwawe</>
-         </Navbar.Brand>
+  return (
+    <>
+    <Navbar className="bg_body">
+        <Container>
+          <Navbar.Brand className='text-light' >
+            <img alt=""src={logo} width="40"height="40"className="Logo"/>
+              Sounwave
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Nav className="m-auto">
-         <Nav.Link className='text-light' href="#discover">Discover</Nav.Link>
-    <Nav.Link className='text-light' href="#join">Join</Nav.Link>
-  </Nav>
-
-  </Container>
+            <NavLink to={"/"} className='text-light'>Home</NavLink>
+            <NavLink to={"/Discover"} className='text-light'>Discover</NavLink>
+            <NavLink to={"/Join"} className='text-light'>Join</NavLink>
+            
+          </Nav>
+          
+        </Container>
       </Navbar>
-    );
+    </>
+    
+  )
 }
