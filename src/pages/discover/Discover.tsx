@@ -12,36 +12,20 @@ import "./discover.css";
 export const Discover = () => {
   return (
     <>
-      <Container className="bgicons">
+      <Container >
         <Row>
-          <Col>
-            <div className="jumbotron jumbotron-fluid">
-              <h1 className="display">Discover new music</h1>
-              <div>
-                <CardGroup>
-                  <Card className="cardimg">
-                    <Col>
-                    
-                      <Card bg={"Dark".toLowerCase()} style={{ width: '2rem' }}>
-                        <Card.Img src={icon1} />
-                      </Card>
-                    </Col>
-                    <Col>
-                      <Card bg={"Dark".toLowerCase()}>
-                        <Card.Img src={icon2} />
-                      </Card>
-                    </Col>
-                    <Card bg={"Dark".toLowerCase()}>
-                      <Card.Img src={icon3} />
-                    </Card>
-                  </Card>
-                </CardGroup>
-                <p className="lead">
-                  by joining you can benefit by listening to the latest albums
-                  release
-                </p>
-              </div>
-            </div>
+          <Col >
+            <CardGroup className="bgicons">
+              <Card bg={"Dark".toLowerCase()} >
+                <Card.Img variant="top" src={icon1} style={{ width: "5rem" }} />
+              </Card>
+              <Card bg={"Dark".toLowerCase()} >
+                <Card.Img variant="top" src={icon2} style={{ width: "5rem" }}/>
+              </Card>
+              <Card bg={"Dark".toLowerCase()} >
+                <Card.Img variant="top" src={icon3} style={{ width: "5rem" }}/>
+              </Card>
+            </CardGroup>
           </Col>
           <Col className="cover">
             <Card.Img variant="top" src={covers} />

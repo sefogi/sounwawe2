@@ -1,9 +1,13 @@
-.jumbotron{
-    flex-direction: column;
-    align-items: center;
-    background-color: #2F303A;
- 
-}
+
+ .bgcard{
+    background-color: black;
+ }
+
+ .bgicons{
+    margin-top: 15rem;
+    justify-content: center;
+ }
+
 
 
 

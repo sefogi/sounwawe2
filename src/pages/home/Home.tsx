@@ -2,30 +2,33 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import bgimage from "../../assets/landing-page-girl.png";
+import Figure from 'react-bootstrap/Figure';
 import "./home.css"
 
 
 
 export const Home = () => {
   return (
-    <div>
-      <Container>
-        <Row>
-          <Col md={{ span:5, offset: 6 }} >
-             <h1>Felling the music</h1>
-             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere repudiandae magni odit similique id molestias tempora voluptates aperiam iste repellat. Culpa consequatur beatae itaque reiciendis. Soluta officiis expedita ratione ducimus.</p>
+    <>
+      
+     <Container>
+        
+        <Row >
+          <Col md={{ span: 4, offset:2  }} >
+          <img className='bg-image' src={bgimage} alt="Girl in a field" ></img>
           </Col>
           
-          <Col  md={{ span: 6, offset: 2 }} >
-            
-          <img className='bg-image' src={bgimage} alt="Girl in a field"></img>
-              
-          
+          <Col>
+           <div className="jumbotron">
+             <h1 className="display-">Feel the music</h1>
+                   <p className="lead">Stream over 20 thousand songs with one click </p>
+                   <a className="btn btn-primary btn-lg" href="/Join" role="button">Join now</a>
+           </div>
           </Col>
         </Row>
       </Container>
-    </div>
-
+      <div id='circle'></div>
+    </>
   )
 }
 
