@@ -21,28 +21,18 @@ export const Join = () => {
     setValidated(true);
   };
   return (
-    <>
-     
-     <Form noValidate validated={validated} onSubmit={handleSubmit}>
-      <Row className="mb-3">
+    <Form noValidate validated={validated} onSubmit={handleSubmit}>
+      <Row className="mb-2">
         <Form.Group as={Col} md="5" controlId="validationCustom01">
-          <Form.Label>First name</Form.Label>
+          <Form.Label>Name</Form.Label>
           <Form.Control
             required
             type="text"
             placeholder="First name"
             defaultValue="Mark"
           />
-          <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-        </Form.Group>
-        <Form.Group as={Col} md="5" controlId="validationCustom02">
-          <Form.Label>Last name</Form.Label>
-          <Form.Control
-            required
-            type="text"
-            placeholder="Last name"
-            defaultValue="Otto"
-          />
+          
+         
           <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
         </Form.Group>
         <Form.Group as={Col} md="5" controlId="validationCustomUsername">
@@ -94,7 +84,5 @@ export const Join = () => {
       </Form.Group>
       <Button type="submit">Submit form</Button>
     </Form>
-  
-    </>
-  );
-}
+    );
+    }
